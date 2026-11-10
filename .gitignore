@@ -1,0 +1,36 @@
+# Secrets. Commit .env.example only; real keys stay local.
+.env
+.env.*
+!.env.example
+*.pem
+credentials.json
+
+# Python env and generated caches (venv, pytest, bytecode).
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Local database files and logs. pgvector data stays in the Docker volume.
+*.log
+*.sqlite
+*.sqlite3
+*.db
+pgdata/
+
+# OS and editor state.
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
